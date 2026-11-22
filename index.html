@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ice Springs Drinking Water | Pure Water - Kampala</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-3" href="#">
+      <img src="icewaterlogo.jpeg" alt="Ice Springs" style="height:55px; width:auto; border-radius:8px; object-fit:cover;"> 
+      ICE <span class="text-primary">SPRINGS</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="#delivery">Delivery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link text-primary" href="login.html">Staff Login</a></li>
+         <li class="nav-item"><a class="nav-link" href="gallary.html">Gallery</a></li>
+      </ul>
+
+      <a href="https://wa.me/256701025845?text=Hello%20Ice%20Springs!%20I%20want%20to%20order" target="_blank" class="btn btn-blue ms-3"><i class="bi bi-whatsapp"></i> Order Now</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero text-center">
+  <div class="container">
+    <img src="icewaterlogo.jpeg" alt="Ice Springs Drinking Water" style="width:260px; max-width:85%; border-radius:20px; box-shadow:0 10px 30px rgba(0,0,0,0.3);">
+    <h1 class="mt-3">Pure Water,<br>Delivered <span class="text-light-blue">Ice Cold.</span></h1>
+    <p class="lead my-4">Fresh, clean Ice Springs Drinking Water for homes, offices, shops & events.<br>Along Masaka - Kampala Rd & Ntinda, Kampala.</p>
+    <a href="#products" class="btn btn-white btn-lg me-2">View Products</a>
+    <a href="https://wa.me/256701025845" target="_blank" class="btn btn-outline-light btn-lg"><i class="bi bi-whatsapp"></i> Order on WhatsApp</a>
+    <p class="mt-4 small"><i class="bi bi-telephone"></i> +256 701 025845 &nbsp; | &nbsp; <i class="bi bi-clock"></i> Mon - Sat: 8:00 AM - 5:00 PM</p>
+  </div>
+</section>
+
+<div class="container" id="order">
+  <div class="order-box">
+    <h4 class="fw-bold mb-3">🚚 Order Ice Springs Now</h4>
+    <form class="row g-3" onsubmit="orderWater(event)">
+      <div class="col-md-3"><label class="form-label">Your Name</label><input id="cName" type="text" class="form-control" placeholder="e.g. John Kato" required></div>
+      <div class="col-md-3"><label class="form-label">Phone</label><input id="cPhone" type="tel" class="form-control" placeholder="0701..." required></div>
+      <div class="col-md-3"><label class="form-label">Product</label>
+        <select id="cProduct" class="form-select">
+          <option>600ml Bottles x 24</option>
+          <option>1.5 Litre Bottles x 12</option>
+          <option>5 Litres Bottle</option>
+          <option>20 Litres Dispenser Bottle</option>
+          <option>20 Litres Jerrycan</option>
+        </select>
+      </div>
+      <div class="col-md-3 d-flex align-items-end"><button class="btn btn-blue w-100"><span id="btnText">Ask Price & Order</span> <span id="spinner" class="spinner-border spinner-border-sm d-none"></span></button></div>
+    </form>
+    <p class="small text-muted mt-2 mb-0">We will give you the best price on WhatsApp based on quantity & location.</p>
+  </div>
+</div>
+
+<section id="products" class="py-5">
+  <div class="container">
+    <div class="text-center mb-5"><p class="text-primary fw-bold">OUR PRODUCTS</p><h2 class="fw-bold">Choose Your Size</h2><p class="text-muted">Purified Ice Springs Drinking Water - Sealed & Safe. <br>Contact us for today's best price.</p></div>
+    <div class="row g-4">
+      <div class="col-md-4"><div class="card product-card"><img src="2.png" class="card-img-top" style="height:260px; object-fit:cover;"><div class="card-body"><h5>600ml Bottles x 24</h5><p class="text-muted small">Perfect for shops, schools, events & parties. Ice cold pack.</p><p><span class="badge bg-success">In Stock</span></p><a href="https://wa.me/256701025845?text=I%20want%20price%20for%2024x%20600ml" target="_blank" class="btn btn-blue w-100">Ask Price & Order</a></div></div></div>
+      <div class="col-md-4"><div class="card product-card"><img src="1.jpeg" class="card-img-top" style="height:260px; object-fit:cover;"><div class="card-body"><h5>1.5 Litre Bottles x 12</h5><p class="text-muted small">Best for home, office & travel. Stay hydrated all day.</p><p><span class="badge bg-success">In Stock</span></p><a href="https://wa.me/256701025845?text=I%20want%20price%20for%2012x%201.5L" target="_blank" class="btn btn-blue w-100">Ask Price & Order</a></div></div></div>
+      <div class="col-md-4"><div class="card product-card"><img src="icewaterlogo.jpeg" class="card-img-top" style="height:260px; object-fit:cover;"><div class="card-body"><h5>5 Litres Bottle</h5><p class="text-muted small">Easy to carry, great for home & fridge.</p><p><span class="badge bg-success">In Stock</span></p><a href="https://wa.me/256701025845?text=I%20want%20price%20for%205%20Litres" target="_blank" class="btn btn-blue w-100">Ask Price & Order</a></div></div></div>
+      <div class="col-md-4"><div class="card product-card"><img src="https://images.unsplash.com/photo-1585232561287-1a52825f8d6b?w=800" class="card-img-top"><div class="card-body"><h5>20 Litres Dispenser Bottle</h5><p class="text-muted small">For dispensers at home & office. We deliver & pick empty.</p><p><span class="badge bg-warning text-dark">Low Stock: 15 left</span></p><a href="https://wa.me/256701025845?text=I%20want%20price%20for%2020L%20Dispenser" target="_blank" class="btn btn-blue w-100">Ask Price & Order</a></div></div></div>
+      <div class="col-md-4"><div class="card product-card"><img src="https://images.unsplash.com/photo-1616116310801-e1c9a5cddb0a?w=800" class="card-img-top"><div class="card-body"><h5>20 Litres Jerrycan</h5><p class="text-muted small">Strong jerrycan for homes, shops & sites.</p><p><span class="badge bg-success">In Stock</span></p><a href="https://wa.me/256701025845?text=I%20want%20price%20for%2020L%20Jerrycan" target="_blank" class="btn btn-blue w-100">Ask Price & Order</a></div></div></div>
+      <div class="col-md-4"><div class="card product-card bg-primary text-white text-center d-flex flex-column justify-content-center p-4" style="min-height:300px"><h4>Need Bulk / Wholesale?</h4><p>For schools, events, offices & shops - get special discount price!</p><a href="https://wa.me/256701025845?text=I%20want%20wholesale%20price" target="_blank" class="btn btn-white">Get Wholesale Price</a></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="why" class="py-5 bg-white">
+  <div class="container"><div class="text-center mb-4"><h2 class="fw-bold">Why Choose Ice Springs?</h2></div>
+    <div class="row g-3 text-center">
+      <div class="col-6 col-md-3"><div class="feature-box"><i class="bi bi-droplet-fill"></i><h6 class="mt-2">100% Purified</h6><p class="small text-muted">Filtered & UV treated</p></div></div>
+      <div class="col-6 col-md-3"><div class="feature-box"><i class="bi bi-truck"></i><h6 class="mt-2">Fast Delivery</h6><p class="small text-muted">Same day in Kampala</p></div></div>
+      <div class="col-6 col-md-3"><div class="feature-box"><i class="bi bi-snow"></i><h6 class="mt-2">Always Ice Cold</h6><p class="small text-muted">Chilled on delivery</p></div></div>
+      <div class="col-6 col-md-3"><div class="feature-box"><i class="bi bi-cash-coin"></i><h6 class="mt-2">Fair Prices</h6><p class="small text-muted">Wholesale available</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="py-5">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-1">Ice Springs Gallery</h2>
+    <p class="text-center text-muted mb-4">Our signature 600ml & 1.5L bottles.</p>
+    <div class="row g-3">
+      <div class="col-md-4"><img src="icewaterlogo.jpeg" class="img-fluid rounded-4 gallery-img"><p class="text-center small mt-1">600ml & 1.5L - Ice Springs</p></div>
+      <div class="col-md-4"><img src="icewaterlogo.jpeg" class="img-fluid rounded-4 gallery-img"><p class="text-center small mt-1">Purified & Sealed</p></div>
+      <div class="col-md-4"><img src="icewaterlogo.jpeg" class="img-fluid rounded-4 gallery-img"><p class="text-center small mt-1">Always Ice Cold</p></div>
+    </div>
+    <div class="row mt-4"><div class="col-md-8 mx-auto text-center bg-light p-4 rounded-4 shadow-sm"><div class="text-warning fs-5">★★★★★</div><p class="fst-italic mt-2">"Best water in Ntinda! Always cold, always on time."</p><strong>- Sarah N., Shop Owner, Ntinda</strong></div></div>
+  </div>
+</section>
+
+<section id="delivery" class="py-5 bg-white">
+  <div class="container"><div class="row align-items-center"><div class="col-md-6"><img src="icewaterlogo.jpeg" class="img-fluid rounded-4 shadow"></div>
+  <div class="col-md-6"><h2 class="fw-bold">We Deliver To You</h2><p class="text-muted">Order before 3 PM and get same-day delivery.</p><ul class="list-unstyled"><li>✅ <b>Masaka - Kampala Rd</b> - Main Route</li><li>✅ <b>Akamwesi Mall, Ntinda</b></li><li>✅ <b>Ntinda - Kisaasi Road</b></li><li>✅ <b>Kampala & Surroundings</b></li></ul><a href="https://wa.me/256701025845" target="_blank" class="btn btn-blue">Check Delivery In Your Area</a></div></div></div>
+</section>
+
+<footer id="contact" class="py-5">
+  <div class="container"><div class="row">
+    <div class="col-md-4"><img src="icewaterlogo.jpeg" style="width:120px; border-radius:12px;"><h4 class="mt-2">ICE <span class="text-primary">SPRINGS</span></h4><p>Drinking Water - Pure, Safe, Ice Cold.</p><p><i class="bi bi-geo-alt"></i> Along Masaka - Kampala Rd<br>Akamwesi Mall, Ntinda - Kisaasi Rd, Kampala</p></div>
+    <div class="col-md-4"><h5 class="text-white">Contact Us</h5><p><i class="bi bi-telephone"></i> +256 701 025845<br><i class="bi bi-whatsapp"></i> WhatsApp: +256 701 025845<br><i class="bi bi-envelope"></i> info@icesprings.co.ug</p></div>
+    <div class="col-md-4"><h5 class="text-white">Opening Hours</h5><p>Monday - Saturday<br>8:00 AM - 5:00 PM<br>Sunday: Closed</p><a href="https://wa.me/256701025845" class="btn btn-blue">Order Now</a></div>
+  </div><hr><p class="text-center mb-0">© 2026 Ice Springs Drinking Water, Kampala. All Rights Reserved.</p></div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+function orderWater(e){
+  e.preventDefault();
+  var btnText=document.getElementById('btnText'); var spinner=document.getElementById('spinner');
+  btnText.innerText='Preparing...'; spinner.classList.remove('d-none');
+  var name=document.getElementById('cName').value; var phone=document.getElementById('cPhone').value; var product=document.getElementById('cProduct').value;
+  var msg="Hello Ice Springs! My name is "+name+". Phone: "+phone+". I want price for: "+product;
+  setTimeout(function(){ window.open("https://wa.me/256701025845?text="+encodeURIComponent(msg),"_blank"); btnText.innerText='Ask Price & Order'; spinner.classList.add('d-none'); },1000);
+}
+</script>
+</body>
+</html>
