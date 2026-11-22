@@ -1,0 +1,18 @@
+:root{ --blue:#007bff; --dark-blue:#0056b3; --light:#eaf6ff; }
+body{ font-family:'Segoe UI',sans-serif; background:#f8fbff; }
+.btn-blue{ background:var(--blue); color:white; border:none; padding:12px 28px; border-radius:30px; font-weight:600; }
+.btn-blue:hover{ background:var(--dark-blue); color:white; }
+.btn-white{ background:white; color:var(--blue); padding:12px 28px; border-radius:30px; font-weight:700; border:none; }
+.text-light-blue{ color:#aee2ff; }
+.hero{ background:linear-gradient(rgba(0,80,160,0.75), rgba(0,120,220,0.75)), url('https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=1200'); background-size:cover; background-position:center; min-height:88vh; display:flex; align-items:center; color:white; }
+.hero h1{ font-size:3.4rem; font-weight:800; line-height:1.1; }
+.order-box{ background:white; padding:30px; border-radius:20px; box-shadow:0 10px 30px rgba(0,0,0,0.12); margin-top:-60px; position:relative; z-index:10; }
+.product-card{ border:none; border-radius:15px; overflow:hidden; box-shadow:0 5px 20px rgba(0,0,0,0.08); transition:0.3s; }
+.product-card:hover{ transform:translateY(-5px); }
+.product-card img{ height:220px; object-fit:cover; }
+.price-badge{ position:absolute; top:15px; right:15px; background:var(--blue); color:white; padding:6px 14px; border-radius:20px; font-weight:700; font-size:13px; }
+.feature-box{ background:var(--light); padding:25px; border-radius:15px; text-align:center; }
+.feature-box i{ font-size:2rem; color:var(--blue); }
+.gallery-img{ height:220px; object-fit:cover; width:100%; }
+footer{ background:#0a2540; color:#ccc; }
+.login-bg{ min-height:100vh; background:linear-gradient(rgba(0,80,160,0.7), rgba(0,120,220,0.7)), url('https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=1200'); background-size:cover; display:flex; align-items:center; }
