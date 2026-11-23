@@ -16,3 +16,14 @@ body{ font-family:'Segoe UI',sans-serif; background:#f8fbff; }
 .gallery-img{ height:220px; object-fit:cover; width:100%; }
 footer{ background:#0a2540; color:#ccc; }
 .login-bg{ min-height:100vh; background:linear-gradient(rgba(0,80,160,0.7), rgba(0,120,220,0.7)), url('https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=1200'); background-size:cover; display:flex; align-items:center; }
+.gallery-3 {
+  display: flex;
+  flex-wrap: nowrap !important;
+  gap: 8px;
+}
+.gallery-3 img {
+  width: 33.33%;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 10px;
+}
